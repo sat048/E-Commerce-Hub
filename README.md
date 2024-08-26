@@ -28,6 +28,23 @@ This project is a robust e-commerce platform built using the MERN stack (MongoDB
   - Apache JMeter: Simulating user load and testing system performance.
   - Jest: Unit and integration testing for backend APIs.
 
+## JavaScript Files Overview
+
+### Frontend (React.js)
+- **src/App.js**: The main entry point for the React application, handling routing between different pages.
+- **src/components/Navbar.js**: Contains the navigation bar component displayed at the top of each page.
+- **src/components/SearchBar.js**: Handles user input for searching products and triggers the API call to fetch product data.
+- **src/components/ProductList.js**: Displays the list of products returned from the search query. It processes and renders the first 3 product results on the page.
+- **src/pages/CompareProducts.js**: The main page where users can search for products and compare prices across different stores.
+- **src/pages/ProductDetails.js**: Displays detailed information about a selected product, including offers from different stores.
+- **src/components/Chatbot.js**: Integrates the OpenAI chatbot for personalized product recommendations.
+
+### Backend (Node.js/Express.js)
+- **index.js**: The entry point for the Node.js server, responsible for starting the server and handling routes.
+- **routes/api/products.js**: Defines the API endpoints for searching and comparing products.
+- **controllers/productsController.js**: Contains the logic for fetching product data from external APIs and processing it.
+- **middleware/auth.js**: Handles user authentication using JWT for secure API access.
+
 ## Setup Instructions
 
 ### Prerequisites
